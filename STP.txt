@@ -1,0 +1,33 @@
+問１
+
+ルートブリッジ：switch3
+
+
+問２
+
+Switch１－Switch３　１００
+Switch１－Switch２－Switch４－Switch３　１９＋１００＋１００＝２１９
+
+Switch１のF0/2がRP
+
+
+Switch２－Switch１－Switch３　１９＋１００＝１１９
+Switch２－Switch４－Switch３　１００＋１００＝２００
+
+Switch２F0/1がRP
+
+
+Switch４－Switch３　１００
+Switch４－Switch２－Switch１－Switch３　１００＋１９＋１００＝２１９
+
+Switch４のE0/2がRP
+
+
+Switch３がルートブリッジなのでSwitch３のE0/1、E0/2がDP
+RPの向かいのポートがDPなので、Switch１のF0/1がDP
+
+Switch４のほうがブリッジIDが小さいので、Switch４のE0/1がDP
+
+
+
+Switch２のF0/2がRPにもDPにも選出されてないのでBP
